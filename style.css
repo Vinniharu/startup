@@ -1,0 +1,116 @@
+*{
+   margin: 0;
+   padding: 0;
+   border: none;
+   outline: none;
+   font-family: 'Montserrat', sans-serif;
+   background: transparent;
+   text-decoration: none;
+}
+
+:root{
+   --primary-color: aqua;
+   --mainfont: #ddd;
+   --spancolor: #481fff;
+}
+
+header{
+   width: auto;
+   height: 89.9vh;
+   padding: 2rem;
+   background-image: url('https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: var(--mainfont);
+}
+
+#nav_head{
+   font-size: 1.3rem;
+   font-weight: 800;
+}
+
+#navbtn{
+   font-size: 2rem;
+   cursor: pointer;
+}
+
+#sidebar{
+   position: absolute;
+   justify-content: center;
+   flex-direction: column;
+   background-color: #333;
+   width: 100%;
+   bottom: 0;
+   right: 0;
+   height: 80vh;
+   overflow: hidden;
+   animation: navToggle 0.4s ease-in-out forwards;
+}
+
+#links{
+   display: flex;
+   margin-top: 3rem;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center; 
+}
+
+#links a{
+   color: var(--mainfont);
+   font-size: 0.8rem;
+   padding: 2rem;
+   width: 100%;
+   border-bottom: 1px solid #999;
+   transition: 0.4s ease-in-out;
+}
+
+#links a:hover{
+   font-size: 1.2rem;
+   color: var(--primary-color);
+}
+
+#content{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 4rem;
+   max-width: 60rem;
+   margin: auto;
+   text-align: center;
+   height: 80vh;
+   color: var(--mainfont);}
+
+#content h1{
+   font-size: 3.4rem;
+   font-weight: 900;
+}
+
+span{
+   color: var(--spancolor);
+}
+
+#content p{
+   font-size: 2rem;
+   color: white;
+}
+
+#content a{
+   font-size: 4rem;
+}
+
+@keyframes navToggle {
+   from{
+      opacity: 1;
+   }
+
+   to{
+      width: 0;
+      opacity: 0;
+   }
+}
