@@ -3,9 +3,10 @@
   padding: 0;
   border: none;
   outline: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: sans-serif;
   background: transparent;
   text-decoration: none;
+  list-style: none;
 }
 
 :root {
@@ -123,7 +124,7 @@ span {
   display: flex;
   align-items: start;
   justify-content: space-between;
-  gap: 4rem 10rem;
+  gap: 4rem ;
   flex-wrap: wrap;
 }
 
@@ -131,7 +132,7 @@ span {
   flex: 1;
 }
 
-#splenWord p {
+#splenWord p, #topText p {
   font-size: 1.2rem;
   font-weight: 800;
   letter-spacing: 2px;
@@ -139,29 +140,30 @@ span {
   margin-bottom: 2rem;
 }
 
-#splenWord h1 {
-  font-size: 3rem;
+#splenWord h1, #topText h1 {
+  font-size: 2.6rem;
   color: #333;
   margin-bottom: 4rem;
 }
 
-#splenWord a {
+#splenWord a, #topText a {
   font-size: 1.4rem;
   padding: 1rem 2rem;
   border: 2px solid var(--spancolor);
   transition: 0.4s ease-in-out;
   color: #481fff;
+  border-radius: 4px;
 }
 
-#splenWord a:hover {
+#splenWord a:hover, #topText a:hover {
   letter-spacing: 4px;
 }
 
-#splenWord a:visited {
+#splenWord a:visited, #topText a:visited {
   color: #481fff;
 }
 
-#splenWord a:active {
+#splenWord a:active, #topText a:active {
   color: #481fff;
 }
 
@@ -170,11 +172,11 @@ span {
   flex: 1;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .card {
-  max-width: 16rem;
-  padding: 1rem;
+  max-width: 14rem;
 }
 
 .card div {
@@ -230,7 +232,146 @@ span {
    font-size: 1.6rem;
 }
 
-@media all and (max-width: 700px) {
+.high{
+  margin: 10rem auto ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.highImg img, .highText{
+  flex: 1;
+  width: 100%;
+  margin: auto;
+  border-radius: 2rem;
+}
+
+.highText h1{
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.highP{
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 2rem;
+}
+
+.highText li{
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 3rem 0;
+  font-size: 1rem;
+  color: #444;
+  font-weight: 600;
+}
+
+.iconhigh{
+  color: #0105e2;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+#stats{
+  display: flex;
+  flex-direction: column;
+  min-height: 10rem;
+  justify-content: space-between;
+}
+
+.barText{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar{
+  height: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  border: 2px solid var(--mainfont);
+  border-radius: 1rem;
+}
+
+#line1, #line2{
+  background-color: #f5f522;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+#line1{
+  width: 80%;
+}
+
+#line2{
+  width: 20%;
+}
+
+#gallery, #gallery h1{
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #4c4c68;
+}
+
+#gallery p{
+  color: #999;
+  font-size: 1.2rem;
+}
+
+.gallery-container {
+  width: 80%; 
+  margin: 10rem auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 1rem;
+}
+
+.gallery-slide {
+  width: 30%;
+}
+
+.gallery-slide img{
+  width: 100%;
+}
+
+.prev-btn, .next-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#top{
+  width: 80%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 12rem auto;
+}
+
+#topText h4{
+  color: #0105e2;
+  margin-bottom: 2rem;
+}
+
+@media all and (min-width: 700px) {
+  #high2nd{
+    flex-direction: row-reverse;
+  }
+}
+
+@media all and (max-width: 800px) {
   #content h1 {
     font-size: 1.4rem;
   }
@@ -239,6 +380,12 @@ span {
   }
   #splendid {
     padding: 2rem;
+  }
+  .count h1{
+    font-size: 2rem;
+  }
+  .count p{
+    font-size: 0.6rem;
   }
 }
 
