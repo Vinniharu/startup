@@ -10,7 +10,7 @@
 }
 
 :root {
-  --primary-color: aqua;
+  --primary-color: rgb(208, 218, 218);
   --mainfont: #ddd;
   --spancolor: #0105e2;
 }
@@ -133,17 +133,18 @@ span {
 }
 
 #splenWord p, #topText p {
-  font-size: 1.2rem;
-  font-weight: 800;
-  letter-spacing: 2px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 1px;
   color: #888;
-  margin-bottom: 2rem;
+  line-height: 2rem;
+  margin-bottom: 4rem;
 }
 
 #splenWord h1, #topText h1 {
   font-size: 2.6rem;
   color: #333;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 #splenWord a, #topText a {
@@ -259,6 +260,7 @@ span {
 .highP{
   font-size: 0.9rem;
   color: #999;
+  line-height: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -335,34 +337,142 @@ span {
 }
 
 .gallery-slide {
-  width: 30%;
+  width: 40%;
+  margin: auto;
 }
 
 .gallery-slide img{
   width: 100%;
 }
 
-.prev-btn, .next-btn {
-  width: 40px;
-  height: 40px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
 #top{
   width: 80%;
   display: flex;
   align-items: start;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: center;
+  gap: 4rem;
   margin: 12rem auto;
+  flex-wrap: wrap;
+}
+
+#topText{
+  flex: 2;
+}
+
+#topCards{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 #topText h4{
   color: #0105e2;
   margin-bottom: 2rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.topCard{
+  background-color: #e7e2fd41;
+  padding: 2rem 4rem;
+  color: #888afd;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.topCard section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 6rem;
+  margin: 0.6rem 0;
+  flex-wrap: wrap;
+}
+
+.topCard section p{
+   color: #555;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 100;
+}
+
+.topCard section img{
+  border-radius: 50%;
+}
+
+.topCard p{
+  font-size: 1rem;
+  color: #333;
+  font-weight: 700;
+}
+
+#bottom{
+  background-image: url('http://jevelin.shufflehound.com/startup-creative/wp-content/uploads/sites/36/2019/11/Rectangle-1-copy-9.jpg?id=776');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 0;
+}
+
+#botcontent{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+
+.bot1, .bot2{
+  flex: 1;
+  color: white;
+}
+
+.bot1 h1{
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.bot1 p{
+  font-size: 1.3rem;
+  font-weight: lighter;
+  line-height: 28.2px;
+  width: 80%;
+  letter-spacing: normal;
+  margin-bottom: 2rem;
+}
+
+#social{
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.bot2{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.bot2 h1{
+  font-size:  1.4rem;
+}
+
+.bot2 ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.bot2 a{
+  color: #b8b6d3;
 }
 
 @media all and (min-width: 700px) {
@@ -386,6 +496,9 @@ span {
   }
   .count p{
     font-size: 0.6rem;
+  }
+  #botcontent{
+    justify-content: center;
   }
 }
 
