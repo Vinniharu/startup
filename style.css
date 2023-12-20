@@ -193,6 +193,43 @@ span {
   font-size: 1rem;
 }
 
+#counts{
+   background-image: url('http://jevelin.shufflehound.com/startup-creative/wp-content/uploads/sites/36/2019/11/daniel-korpai-8GDCzWrcE3M-unsplash.jpg?id=761');
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   height: 100vh;
+   color: var(--mainfont);
+}
+
+.count{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   text-align: center;
+   max-width: 16rem;
+}
+
+.count h1{
+   font-size: 5rem;
+   font-weight: 900;
+   margin-bottom: 1rem;
+}
+
+.gap{
+   border: 2px solid #f5f522;
+   width: 1rem;
+   margin-bottom: 1rem;
+}
+
+.count p{
+   font-size: 1.6rem;
+}
+
 @media all and (max-width: 700px) {
   #content h1 {
     font-size: 1.4rem;
